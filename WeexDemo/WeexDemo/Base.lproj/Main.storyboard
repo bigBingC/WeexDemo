@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxo-xo-Jsf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5VH-rE-f3d">
+            <objects>
+                <navigationController id="Bxo-xo-Jsf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yp2-ei-u6E">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z1Z-q8-fJh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pd-rL-8ri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1034" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF4-fM-K8C">
+                                <rect key="frame" x="151.5" y="164" width="72" height="30"/>
+                                <state key="normal" title="weexLocal"/>
+                                <connections>
+                                    <action selector="didPressedWeexBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7db-gD-QGZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikx-V7-haw">
+                                <rect key="frame" x="154" y="255.5" width="66" height="30"/>
+                                <state key="normal" title="weexHttp"/>
+                                <connections>
+                                    <action selector="didpressedWeexHttp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egx-nk-ufK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gth-vy-oEH">
+                                <rect key="frame" x="157" y="356" width="60" height="30"/>
+                                <state key="normal" title="LoadImg"/>
+                                <connections>
+                                    <action selector="didPressedLoadImgBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7i-he-KMZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ikx-V7-haw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8EH-cw-VNA"/>
+                            <constraint firstItem="gth-vy-oEH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ajg-0N-IYa"/>
+                            <constraint firstItem="gth-vy-oEH" firstAttribute="top" secondItem="Ikx-V7-haw" secondAttribute="bottom" constant="70.5" id="BXP-Og-6sZ"/>
+                            <constraint firstItem="GF4-fM-K8C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="OH9-ha-WMl"/>
+                            <constraint firstItem="Ikx-V7-haw" firstAttribute="top" secondItem="GF4-fM-K8C" secondAttribute="bottom" constant="61.5" id="eEY-8h-kup"/>
+                            <constraint firstItem="GF4-fM-K8C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOz-c0-f4s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tL9-1m-oLG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
